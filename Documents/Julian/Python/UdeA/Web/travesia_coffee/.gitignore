@@ -1,0 +1,50 @@
+# Ignorar configuraciones del editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignorar entornos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignorar configuraciones personales de Windows
+AppData/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+*.lnk
+*.log
+*.bak
+*.tmp
+
+# Ignorar archivos grandes que no quieres subir
+*.7z
+*.zip
+*.rar
+*.tar
+*.gz
+*.iso
+*.img
+
+# Ignorar archivos Excel temporales
+*.xlsx
+~$*
+
+# Ignorar archivos del entorno virtual
+anaconda3/
+
+# Opcional: ignora todo excepto el código
+!*.py
