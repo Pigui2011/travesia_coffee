@@ -7,7 +7,7 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
     envVars:
-      - key: FLASK_ENV
+      - key: FLASK_ENVgit add render.yaml
         value: production
       # Agrega más variables si tu app lo requiere
       # - key: SECRET_KEY
