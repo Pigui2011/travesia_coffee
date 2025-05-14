@@ -1,16 +1,21 @@
 {% extends 'base.html' %}
 {% block contenido %}
-<h2>Catálogo</h2>
-<div class="row">
-    <div class="col-md-4">
-        <div class="card">
-            <img src="{{ url_for('static', filename='images/producto1.jpg') }}" class="card-img-top">
+<h2 class="mb-4">Catálogo</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for producto in productos %}
+    <div class="col">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename=producto.imagen) }}" class="card-img-top" alt="{{ producto.nombre }}">
             <div class="card-body">
-                <h5 class="card-title">Café Clásico</h5>
-                <p class="card-text">$15.000</p>
-                <a href="https://wa.me/573001112222?text=Quiero%20comprar%20Café%20Clásico" class="btn btn-primary">Comprar</a>
+                <h5 class="card-title">{{ producto.nombre }}</h5>
+                <p class="card-text">{{ producto.precio }}</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+                <a href="{{ producto.whatsapp }}" class="btn btn-success w-100">Comprar</a>
             </div>
         </div>
     </div>
+    {% endfor %}
 </div>
 {% endblock %}
+

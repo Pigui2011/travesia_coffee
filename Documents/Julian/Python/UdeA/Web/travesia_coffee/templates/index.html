@@ -1,6 +1,22 @@
 {% extends 'base.html' %}
+<section class="Inicio">
+  <div class="contenido-Inicio">
+    <h1>Travesía Coffee</h1>
+    <p>Coffee Experience</p>
+  </div>
+</section>
 {% block contenido %}
 <h1>Bienvenido a Travesía Coffee</h1>
-<p>Disfruta la mejor experiencia cafetera.</p>
-<a class="btn btn-success" href="https://wa.me/573001112222">Compra por WhatsApp</a>
+<p>Disfruta la mejor experiencia cafetera del suroeste de Antioquia.</p>
+<a class="btn btn-success" href="https://wa.me/573002674845">Compra por WhatsApp</a>
+<img src="{{ url_for('static', filename='img/producto5.jpeg') }}" class="img-fluid mt-3" alt="Bienvenida">
+
+<p class="mt-4 lead">
+  <strong>Travesía Coffee</strong> nace del corazón de las montañas colombianas y del espíritu incansable de una niña guerrera. Ella creció entre cafetales, aprendiendo desde pequeña el arte de cultivar con amor y cosechar con orgullo. Día tras día, el aroma del café la acompañaba en su travesía, entre el sol de la mañana y el canto de los pájaros. Hoy, esa niña es una mujer que honra sus raíces con cada grano que tuesta. Nuestro café es su legado: auténtico, artesanal y lleno de historia. Cuando tomas una taza de Travesía, compartes un viaje de esfuerzo, pasión y esperanza.
+</p>
+
+<p class="mt-5 text-center fw-bold text-muted">
+  En honor a las mujeres colombianas que, desde niñas, han labrado su historia entre cafetales. Su trabajo, dignidad y pasión son el alma de cada grano que llevamos al mundo.
+</p>
+
 {% endblock %}
