@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: travesia-coffee
+    env: python
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: FLASK_ENVgit add render.yaml
+        value: production
+      # Agrega más variables si tu app lo requiere
+      # - key: SECRET_KEY
+      #   value: tu_clave_secreta
