@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+{% block contenido %}
+<h2>Galería</h2>
+
+<img src="{{ url_for('static', filename='img/galeria1.jpeg') }}" class="img-fluid mb-3">
+<img src="{{ url_for('static', filename='img/galeria2.jpeg') }}" class="img-fluid mb-3">
+<img src="{{ url_for('static', filename='img/portada.jpeg') }}" class="img-fluid mb-3">
+<img src="{{ url_for('static', filename='img/producto1.jpeg') }}" class="img-fluid mb-3">
+<img src="{{ url_for('static', filename='img/producto2.jpeg') }}" class="img-fluid mb-3">
+<img src="{{ url_for('static', filename='img/producto3.jpeg') }}" class="img-fluid mb-3">
+<img src="{{ url_for('static', filename='img/producto4.jpeg') }}" class="img-fluid mb-3">
+<img src="{{ url_for('static', filename='img/producto5.jpeg') }}" class="img-fluid mb-3">
+<img src="{{ url_for('static', filename='img/banner_inicio.jpeg') }}" class="img-fluid mb-3">
+
+{% endblock %}
